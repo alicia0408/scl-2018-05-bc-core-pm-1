@@ -18,8 +18,11 @@
     <td>
       <!--se crea un formulario-->
       <form name = "encryption" action="datos.php" method="POST" target="Result">
-        <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea><br>
+        <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea>
+        <input type="hidden" name ="texto" value = "123"><br>
+        <input type="submit" value ="El Cifrado"> <input type="reset" value ="Copiar"> <input type="password" value=""><input type="submit" value="clave secreta">
       </form>
+       
     </td>
   </tr>
 </tbody>
