@@ -21,6 +21,14 @@
         <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea>
         <input type="hidden" name ="texto" value = "123"><br>
         <input type="submit" value ="El Cifrado"> <input type="reset" value ="Copiar"> <input type="password" value=""><input type="submit" value="clave secreta">
+     <tr>
+       <td>
+         <!--se crea una fila y un segundo formulario-->
+         <form name="Decipher" action="datos.php" method="POST" target="Result">
+           <textarea name="texttoDecipher" id="td" cols="30" rows="10">Su texto a descifrar aqui..</textarea>
+         </form>
+       </td>
+     </tr>
       </form>
        
     </td>
