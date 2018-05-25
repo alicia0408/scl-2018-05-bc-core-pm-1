@@ -6,7 +6,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+<!--Se crea una tabla,para ingreso de texto y botones-->
+<table> 
+<thead>
+  <tr>
+    <h1><strong>Cifrado Cèsar</strong></h1>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>
+      <!--se crea un formulario-->
+      <form name = "encryption" action="datos.php" method="POST" target="Result">
+        <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea><br>
+      </form>
+    </td>
+  </tr>
+</tbody>
+</table>
   <div id="root"></div>
 
   <script src="cipher.js"></script>
