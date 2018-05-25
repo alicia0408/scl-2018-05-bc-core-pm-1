@@ -18,21 +18,22 @@
     <td>
       <!--se crea un formulario-->
       <form name = "encryption" action="datos.php" method="POST" target="Result">
-        <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea>
-        <input type="hidden" name ="texto" value = "123"><br>
+        <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea><br>
+        <!--se crean 3 botones-->
         <input type="submit" value ="El Cifrado"> <input type="reset" value ="Copiar"> <input type="password" value=""><input type="submit" value="clave secreta">
-     <tr>
+      </form>
+        <tr>
        <td>
          <!--se crea una fila y un segundo formulario-->
          <form name="Decipher" action="datos.php" method="POST" target="Result">
-           <textarea name="texttoDecipher" id="td" cols="30" rows="10">Su texto a descifrar aqui..</textarea>
-         </form>
-       </td>
+           <textarea name="texttoDecipher" id="td" cols="30" rows="10">Su texto a descifrar aqui..</textarea><br>
+           <!--se crean dos botones-->
+          <input type="submit" value="Pegar"> <input type="submit" value="descifrar">
+         
+      </td>
      </tr>
-      </form>
-       
-    </td>
-  </tr>
+     
+
 </tbody>
 </table>
   <div id="root"></div>
