@@ -7,37 +7,33 @@
 </head>
 <body>
 <!--Se crea una tabla,para ingreso de texto y botones-->
-<table> 
-<thead>
-  <tr>
-    <h1><strong>Cifrado Cèsar</strong></h1>
-  </tr>
-</thead>
-<tbody>
+<table id="ab"> 
+
+ 
   <tr>
     <td>
+      <h1><strong>Cifrado Cèsar</strong></h1> 
       <!--se crea un formulario-->
-      <form name = "encryption" action="datos.php" method="POST" target="Result">
+      <form  id="p05"  class="encryption" name = "letters" action="datos.php" method="POST" target="Result">
         <textarea name="TexttoEncrypt" id="te" cols="30" rows="10">Su texto a cifrar aqui...</textarea><br>
         <!--se crean 3 botones-->
-        <input type="submit" value ="El Cifrado"> <input type="reset" value ="Copiar"> <input type="password" value=""><input type="submit" value="clave secreta">
-      </form>
-        <tr>
-       <td>
-         <!--se crea una fila y un segundo formulario-->
-         <form name="Decipher" action="datos.php" method="POST" target="Result">
-           <textarea name="texttoDecipher" id="td" cols="30" rows="10">Su texto a descifrar aqui..</textarea><br>
+        <input id="c06"   type="submit" value ="El Cifrado"> <input id="bc" type="submit" value ="Copiar"> 
+        <input id="sn"  type="submit" value="clave secreta"><input type="submit" value="">
+      
+         
+           <textarea id="texto" name="texttoDecipher"  cols="30" rows="10">Su texto a descifrar aqui..</textarea><br>
+          
            <!--se crean dos botones-->
-          <input type="submit" value="Pegar"> <input type="submit" value="descifrar">
-          </td>
+          <input id="l08" type="submit" value="Pegar"> <input id="mc" type="submit" value="descifrar">
+          
+      <!--se crea un imput de color-->
+       <input id="je"  type="color">
+      </td>
     </tr>
-    <!--se crea un imput de color-->
-    <tr>
-      <td> <input type="color"></td>
-    </tr>
-     
-</tbody>
+    </form>
+
 </table>
+
   <div id="root"></div>
 
   <script src="cipher.js"></script>
