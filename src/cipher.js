@@ -1,8 +1,11 @@
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
-  },
+  encode: (sentence,number) => {
+    let sentenceCode,i,result = "";
+sentence = sentence.toUpperCase();
+number = parseInt(number);
+console.log(sentence);
+  }
   decode: () => {
-    /* Acá va tu código */
+    
   }
 }
