@@ -6,37 +6,32 @@
 </head>
 
 <body>
- <!--Se crea una tabla,para ingreso de texto y botones-->
-<table id="ab"> 
+ 
+  <center><h1><strong>Cifrado Cèsar</strong></h1></center>
 
-  <tr>
-    <td>
-      <center>
-      <h1><strong>Cifrado Cèsar</strong></h1> 
-      </center>
       <!--se crea un formulario-->
-      <form  id="p05"  class="encryption" name = "letters" action="datos.php" method="POST" target="Result">
-        <textarea name="TexttoEncrypt" id="te" cols="30" rows="10" placeholder="Su texto a cifrar aqui..." ></textarea><br>
+      <form  id="codificar" method="POST" target="Result">
+
+        <!--Se le indica al usuario donde introducir el texto a cifrar-->
+        <textarea id="oración" cols="30" rows="10" placeholder="Ingrese su texto a cifrar aqui..." ></textarea><br>
       
-        <!--se crean 3 botones-->
-        <input id="c06"   type="submit" value ="El Cifrado"> <input id="bc" type="submit" value ="Copiar"> 
-        <input id="sn"  type="submit" value="clave secreta"><input type="password" value="">
-      
-         <!--segunda caja de texto para introducir el texto a descifrar-->
-           <textarea id="texto" name="texttoDecipher"  cols="30" rows="10" placeholder="Su texto a descifrar aqui.."></textarea><br>
+        <!--Se le indica a el usuario que indique el numero de posiciones de desea que se desplace cada caracter-->
+        <div id="caracteres">Ingrese numero de posiciones a desplazar</div>
+        <input type="number" id="posición" min="1" max="100" placeholder="Ingrese numero">
+        
+         <!--Caja donde se mostrara el resultado del texto descifrado-->
+           <textarea id="texto"  cols="30" rows="10" placeholder="Su texto a descifrar aqui.."></textarea><br>
           
-           <!--se crean dos botones-->
-          <input id="l08" type="submit" value="Pegar"> <input id="mc" type="submit" value="descifrar">
+         <!-- se crean dos botones-->
+         <div id="ejecutores">
+           <button id="cifrando">Cifrado</button>
+           <button id="descifrando">Descifrado</button>
+         </div>
           
-      <!--se crea un imput de color-->
-       <input id="je"  type="color">
-      </td>
-    </tr>
+     
   <div id="after_sumibt"></div>  
 
     </form>
-
-</table>
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>
