@@ -1,4 +1,4 @@
- /*h1 {
+ h1 {
 	font-family: sans-serif;
 }
 
@@ -34,12 +34,10 @@ width: 30;
   padding-left: 5px;
 }
 
-#caracteres{
- 
-}
 
 
-/*#cifrar{
+
+#cifrando{
 background: indianred;
   border: none;
   border-radius: 5px;
@@ -51,7 +49,7 @@ background: indianred;
 }
 
 
-/*#bc{
+#descifrando{
 	background: indianred;
   border: none;
   border-radius: 5px;
@@ -62,65 +60,22 @@ background: indianred;
   margin-top: 15px;
 }
 
-#bc:hover{
+#cifrando:hover{
   background: white;
   border: 1px solid green;
   color: black;
   cursor: pointer;
 }
 
-#sn{
-	background: green;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  color : white;
-  font-size: 16px;
-  transition-duration: .5s;
-  margin-top: 15px;
-}
 
-#sn:hover{
+#descifrando:hover{
   background: white;
   border: 1px solid green;
   color: black;
   cursor: pointer;
 }
 
-#mc{
-background:indianred;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  color : white;
-  font-size: 16px;
-  transition-duration: .5s;
-  margin-top: 15px;	
-}
 
-#mc:hover{
-  background: white;
-  border: 1px solid green;
-  color: black;
-  cursor: pointer;
-}
-
-#l08{
-	background: indianred;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  color : white;
-  font-size: 16px;
-  transition-duration: .5s;
-  margin-top: 15px;
-}
-#l08:hover{
-  background: white;
-  border: 1px solid green;
-  color: black;
-  cursor: pointer;
-}
 
 
 

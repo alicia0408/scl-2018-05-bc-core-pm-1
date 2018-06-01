@@ -1,24 +1,24 @@
 window.cipher = {
-  encode: (oracion, posicion) => {/* funcion o metodo del objeto cipher, funcion flecha*/
-    let i, oracionCode, result = "";
-    oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
+  encode: (oracion, posicion) => {
+
+    oracion = oracion.toUpperCase();// se procede a colocar las letras en mayuscula
     posicion = parseInt(posicion);
     
     for (i = 0; i < oracion.length; i++){
-      if (oracion.charCodeAt(i) === 32) {
+      if (oracion.charCodeAt(i)) {
         result += ' ';
       }
       else {
-        oracionCode = ((oracion.charCodeAt(i) - 65 + posicion)) % 26 + 65;//ciframos segun la formula
-        result += String.fromCharCode(oracionCode);//llenamos la variable con los caracteres ya cifrados
+        oracionCode = ((oracion.charCodeAt(i) - 65 + posicion)) % 26 + 65;//se utiliza la forma
+        result += String.fromCharCode(oracionCode);
       }
-    } //cierre del for
+    } 
     return result;
-  }, //cierre funcion encode
+  }, 
   
   decode: (oracion, posicion) => {
     let result = "", i, oracionCode;
-    oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
+    oracion = oracion.toUpperCase();
     espacios = parseInt(posicion);
     
     for (i = 0; i < oracion.length; i++){
@@ -26,7 +26,7 @@ window.cipher = {
         result += ' ';
       }
       else {
-        oracionCode = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;//deciframos segun la formula
+        oracionCode = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;// se utiliza la formula 
         result += String.fromCharCode(oracionCode);
       }
     }  
