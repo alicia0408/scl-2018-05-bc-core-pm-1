@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Caesar Cipher</title>
 </head>
 
 <body>
@@ -10,28 +11,29 @@
   <center><h1><strong>Cifrado Cèsar</strong></h1></center>
 
       <!--se crea un formulario-->
-      <form  id="codificar" method="POST" target="Result">
+      
 
         <!--Se le indica al usuario donde introducir el texto a cifrar-->
-        <textarea id="oración" cols="30" rows="10" placeholder="Ingrese su texto a cifrar aqui..." ></textarea><br>
+        <textarea id="oracion" cols="30" rows="10" type="text" value= "" placeholder="Ingrese su texto a cifrar aqui..." ></textarea>
       
         <!--Se le indica a el usuario que indique el numero de posiciones de desea que se desplace cada caracter-->
         <div id="caracteres">Ingrese numero de posiciones a desplazar</div>
-        <input type="number" id="posición" min="1" max="100" placeholder="Ingrese numero">
+        <input type="number" id="posicion" min="1" max="100" placeholder="Ingrese numero">
         
-         <!--Caja donde se mostrara el resultado del texto descifrado-->
-           <textarea id="texto"  cols="30" rows="10" placeholder="Su texto a descifrar aqui.."></textarea><br>
+<!-- se crean dos botones-->
+<div id="ejecutores">
+  <button id="cifrando">Cifrado</button>
+  <button id="descifrando">Descifrado</button>
+</div>
+<!--Caja donde se mostrara el resultado del texto descifrado-->
+           <textarea id="texto"  cols="30" rows="10" placeholder="Su texto a descifrar aqui.."></textarea>
           
-         <!-- se crean dos botones-->
-         <div id="ejecutores">
-           <button id="cifrando">Cifrado</button>
-           <button id="descifrando">Descifrado</button>
-         </div>
+         
           
      
-  <div id="after_sumibt"></div>  
+    
 
-    </form>
+  
 
   <script src="cipher.js"></script>
   <script src="index.js"></script>

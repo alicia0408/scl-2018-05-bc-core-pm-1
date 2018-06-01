@@ -6,15 +6,15 @@ Window.onload = function() {
 	// se crea una una funcion y variables para guardar los valores ingresados por el usuarios y lo que retorna.//
 	buttonEncrypting.addEventListener('click',function(){
 		let sentence = "";
-		sentence = document.getElementById("oración").value;
-		let number = document.getElementById("posición").value;
+		sentence = document.getElementById("oracion").value;
+		let number = document.getElementById("posicion").value;
 		document.getElementById("texto").innerHTML = window.cipher.encode(sentence,number);
 	})
 
 	buttonDecoded.addEventListener('click',function(){
 		let sentence = "",
-		sentence = document.getElementById("oración").value;
-		let number = document.getElementById("posición").value;
+		sentence = document.getElementById("oracion").value;
+		let number = document.getElementById("posicion").value;
 		document.getElementById("texto").innerHTML = window.cipher.decode(sentence,number);
 		
 	})
