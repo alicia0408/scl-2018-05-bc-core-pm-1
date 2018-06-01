@@ -4,7 +4,7 @@ window.cipher = {
     const sentenceCode = "";
     const i = "";
     const result = "";
-sentence = sentence.toUpperCase();
+sentence = sentence.toUpperCase();// la oracion se pasa a mayuscula//
 number = parseInt(number);
 console.log(sentence);
 
@@ -13,15 +13,15 @@ for (const i = 0; i < sentence.length; i++) {
         result += "";
       }
       else{
-        wordToCode = ((sentence.charCodeAt(i) - 65 + espacios)) % 26 + 65;
-        result += String.fromCharCode(wordToCode);
+        wordToCode = ((sentence.charCodeAt(i) - 65 + espacios)) % 26 + 65;//formula para ejecutar el cifrado//
+        result += String.fromCharCode(wordToCode);//variable que contiene el resultado de la oracion cifrada//
       }
-  
-
-  
+  console.log(result);
 }
-}
-  decode: () => {
+result()
+},
+ 
+decode: () => {
       /* Acá va tu código */
     }
 }
