@@ -1,11 +1,8 @@
 window.cipher = { // conexion con el evento
   encode: (oracion, posicion) => {// funcion flecha 
-
-    
-    let workToCode = "";
     let result = "";
 
-    oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
+   oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
     posicion = parseInt(posicion);
     for ( let i = 0; i < oracion.length; i++) {
       if (oracion.charCodeAt(i) === 32) {
@@ -21,15 +18,13 @@ window.cipher = { // conexion con el evento
 
 
   decode: (oracion, posicion) => {
-
-    let result = "";
+     let result = "";
    
-
-    oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
-    posicion = parseInt(posicion);
-    for ( let i = 0; i < oracion.length; i++) {
-      if (oracion.charCodeAt(i) === 32) {
-        result += ' ';
+     oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
+     posicion = parseInt(posicion);
+       for ( let i = 0; i < oracion.length; i++) {
+          if (oracion.charCodeAt(i) === 32) {
+            result += ' ';
       }
       else {
        let workToCode = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;//deciframos segun la formula
