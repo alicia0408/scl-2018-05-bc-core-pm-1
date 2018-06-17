@@ -1,35 +1,34 @@
 window.cipher = {
-  encode: (oracion, posicion) => {
-
-    oracion = oracion.toUpperCase();// se procede a colocar las letras en mayuscula
+  encode: (oracion, posicion) => {// funcion flecha 
+    let i, fraseCod, result = "";
+    oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
     posicion = parseInt(posicion);
-    
-    for (i = 0; i < oracion.length; i++){
-      if (oracion.charCodeAt(i)) {
+    for (i = 0; i < oracion.length; i++) {
+      if (oracion.charCodeAt(i) === 32) {
         result += ' ';
       }
       else {
-        oracionCode = ((oracion.charCodeAt(i) - 65 + posicion)) % 26 + 65;//se utiliza la forma
-        result += String.fromCharCode(oracionCode);
+        fraseCod = ((oracion.charCodeAt(i) - 65 + posicion)) % 26 + 65;//ciframos segun la formula
+        result += String.fromCharCode(fraseCod);//llenamos la variable con los caracteres ya cifrados
       }
-    } 
+    }
     return result;
-  }, 
-  
+  },
+
+
   decode: (oracion, posicion) => {
-    let result = "", i, oracionCode;
-    oracion = oracion.toUpperCase();
-    espacios = parseInt(posicion);
-    
-    for (i = 0; i < oracion.length; i++){
-      if (oracion.charCodeAt(i) === 32){
+    let result = "", i, fraseDecod;
+    oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
+    posicion = parseInt(posicion);
+    for (i = 0; i < oracion.length; i++) {
+      if (oracion.charCodeAt(i) === 32) {
         result += ' ';
       }
       else {
-        oracionCode = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;// se utiliza la formula 
-        result += String.fromCharCode(oracionCode);
+        fraseDecod = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;//deciframos segun la formula
+        result += String.fromCharCode(fraseDecod);
       }
-    }  
+    }  //cierre del for
     return result;
-  }
+  }//cierre de decode
 }

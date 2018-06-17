@@ -8,30 +8,23 @@
 
 <body>
  
-  <center><h1><strong>Cifrado Cèsar</strong></h1></center>
-
-      <!--se crea un formulario-->
-      <form id="codificar"></form>
-
-        <!--Se le indica al usuario donde introducir el texto a cifrar-->
-        <textarea id="oracion" cols="30" rows="10" type="text" value= "" placeholder="Ingrese su texto a cifrar aqui..." ></textarea>
-      
-        <!--Se le indica a el usuario que indique el numero de posiciones de desea que se desplace cada caracter-->
-        <div id="caracteres">Ingrese numero de posiciones a desplazar</div>
-        <input type="number" id="posicion" min="1" max="100" placeholder="Ingrese numero">
-        
-<!-- se crean dos botones-->
-<div id="ejecutores">
-  <button id="cifrando">Cifrado</button>
-  <button id="descifrando">Descifrado</button>
-</div>
-<!--Caja donde se mostrara el resultado del texto descifrado-->
-           <textarea id="texto"  cols="30" rows="10" placeholder="Su texto a descifrar aqui.."></textarea>
-          
-        
-        <!--  <div id = "after_sumibt"></div>  -->
-     
-    
+  <!-- input que pide la frase a cifrar -->
+  <div id="contorno">
+    <div id="ingrese">Ingrese el Mensaje que desea cifrar o descifrar: </div>
+    <textarea id="oracion" placeholder="Escribe la frase a codificar o decodificar" type="text" value=""></textarea>
+    <!-- Elección de numero de espacios que se correran los caracteres -->
+    <div id="elija">Ingrese el número de posiciones que desea que se desplace cada caracter: </div>
+    <input type="number" id="posicion" min="1" max="100" placeholder="Escribe un número">
+    <!--Botones de codificar y decodificar-->
+    <div id="botones">
+      <button id="codifica">Codificar</button>
+      <button id="decodifica">Decodificar</button>
+    </div>
+    <!-- Mostrando la frase codificada o decodificada -->
+    <div id="result"></div>
+  </div>
+  </div>
+  </div>
 
   
 
