@@ -7,28 +7,29 @@
 </head>
 
 <body>
- 
-  <!-- input que pide la frase a cifrar -->
-  <div id="contorno">
-    <div id="ingrese">Ingrese el Mensaje que desea cifrar o descifrar: </div>
-    <textarea id="oracion" placeholder="Escribe la frase a codificar o decodificar" type="text" value=""></textarea>
-    <!-- Elección de numero de espacios que se correran los caracteres -->
-    <div id="elija">Ingrese el número de posiciones que desea que se desplace cada caracter: </div>
-    <input type="number" id="posicion" min="1" max="100" placeholder="Escribe un número">
-    <!--Botones de codificar y decodificar-->
-    <div id="botones">
-      <button id="codifica">Codificar</button>
-      <button id="decodifica">Decodificar</button>
-    </div>
-    <!-- Mostrando la frase codificada o decodificada -->
-    <div id="result"></div>
-  </div>
-  </div>
-  </div>
 
+<!--Caja donde donde el usuario debe ingresar el texto a cifrar-->
+<div id="contorno">
+  <div id="ingrese">Ingrese el Mensaje que desea cifrar o descifrar: </div>
+  <textarea id="oracion" placeholder="Escribe la frase a codificar o decodificar" type="text" value=""></textarea>
   
-
-  <script src="cipher.js"></script>
+  <!-- nro de posiciones a correr-->
+  <div id="elija">Ingrese el número de posiciones que desea que se desplace cada caracter: </div>
+  <input type="number" id="posicion" min="1" max="100" placeholder="Escribe un número">
+ 
+  <!--Botones de codificar y decodificar-->
+  <div id="botones">
+    <button id="codifica">Codificar</button>
+    <button id="decodifica">Decodificar</button>
+  </div>
+  
+  <!-- Mostrando la frase codificada o decodificada -->
+  <div id="result"></div>
+</div>
+</div>
+</div>
+        
+      <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

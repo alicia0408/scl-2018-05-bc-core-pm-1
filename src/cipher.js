@@ -1,6 +1,10 @@
-window.cipher = {
+window.cipher = { // conexion con el evento
   encode: (oracion, posicion) => {// funcion flecha 
-    let i, fraseCod, result = "";
+
+    let i = "";
+    let workToCode = "";
+    let result = "";
+
     oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
     posicion = parseInt(posicion);
     for (i = 0; i < oracion.length; i++) {
@@ -8,8 +12,8 @@ window.cipher = {
         result += ' ';
       }
       else {
-        fraseCod = ((oracion.charCodeAt(i) - 65 + posicion)) % 26 + 65;//ciframos segun la formula
-        result += String.fromCharCode(fraseCod);//llenamos la variable con los caracteres ya cifrados
+        workToCode = ((oracion.charCodeAt(i) - 65 + posicion)) % 26 + 65;//se cifra segun la formula
+        result += String.fromCharCode(workToCode);//procedemos a que el dato cifrado se almecene en la variable.
       }
     }
     return result;
@@ -17,7 +21,11 @@ window.cipher = {
 
 
   decode: (oracion, posicion) => {
-    let result = "", i, fraseDecod;
+
+    let result = "";
+    let i = "";
+    let workToCode = "";
+
     oracion = oracion.toUpperCase();//pasamos la frase a mayusculas
     posicion = parseInt(posicion);
     for (i = 0; i < oracion.length; i++) {
@@ -25,10 +33,10 @@ window.cipher = {
         result += ' ';
       }
       else {
-        fraseDecod = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;//deciframos segun la formula
-        result += String.fromCharCode(fraseDecod);
+        workToCode = (oracion.charCodeAt(i) + 65 - (posicion)) % 26 + 65;//deciframos segun la formula
+        result += String.fromCharCode(workToCode);
       }
-    }  //cierre del for
+    }
     return result;
   }//cierre de decode
 }

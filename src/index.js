@@ -1,5 +1,5 @@
-Window.onload = function() {
-	
+window.onload = function () {
+
 	const btnCodifica = document.getElementById("codifica"); //creo una variable que trae el valor del boton codifica true or false
 	const btnDecodifica = document.getElementById("decodifica"); //creo una variable que trae el valor del boton decodifica true or false
 
