@@ -1,19 +1,19 @@
 window.onload = function () {
 
-	const btnCodifica = document.getElementById("codifica"); //creo una variable que trae el valor del boton codifica true or false
-	const btnDecodifica = document.getElementById("decodifica"); //creo una variable que trae el valor del boton decodifica true or false
+	const botonCodifica = document.getElementById("codifica"); // variable que trae el valor del boton codifica true or false
+	const botonDecodifica = document.getElementById("decodifica"); // variable que trae el valor del boton decodifica true or false
 
 	// se crea el evento por medio de addEvenlistener por medio del clik
-	btnCodifica.addEventListener('click', function () { //en el evento click del boton codifica
+	botonCodifica.addEventListener('click', function () { // Evento que se hace por medio del click
 		let texto = "";
-		texto = document.getElementById("oracion").value; //guardo en una variable el valor que el usuario ingresó en el text area
-		let n = document.getElementById("posicion").value;  //guardo en una variable el valor que el usuario ingresó del numero de espacios
-		document.getElementById("result").innerHTML = "El Mensaje Codificado es: " + window.cipher.encode(texto, n);//creo una variable para guardar el valor que retorna al llamar a la función
+		texto = document.getElementById("oracion").value; //guardo en una variable el valor que el usuario ingresó en la caja.
+		let numero = document.getElementById("posicion").value;  //guardo en una variable el valor que el usuario ingresó del numero de posiciones.
+		document.getElementById("result").innerHTML = "El Mensaje Codificado es: " + window.cipher.encode(texto, numero);//creo una variable para guardar el valor que retorna al llamar a la función
 	})
-	btnDecodifica.addEventListener('click', function () {
+	botonDecodifica.addEventListener('click', function () {
 		let texto = "";
 		texto = document.getElementById("oracion").value;
-		let n = document.getElementById("posicion").value;
-		document.getElementById("result").innerHTML = "El Mensaje Decodificado es: " + window.cipher.decode(texto, n);
+		let numero = document.getElementById("posicion").value;
+		document.getElementById("result").innerHTML = "El Mensaje Decodificado es: " + window.cipher.decode(texto, numero);
 	})
 }

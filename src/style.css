@@ -1,1 +1,33 @@
- 
+ #codifica{
+  background: goldenrod;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color : white;
+  font-size: 16px;
+  transition-duration: .5s;
+  margin-top: 15px;
+}
+#codifica:hover{
+  background: white;
+  border: 1px solid aqua;
+  color: black;
+  cursor: pointer;
+}
+
+#decodifica{
+  background: goldenrod;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color : white;
+  font-size: 16px;
+  transition-duration: .5s;
+  margin-top: 15px;
+}
+#decodifica:hover{
+  background: white;
+  border: 1px solid aqua;
+  color: black;
+  cursor: pointer;
+}
