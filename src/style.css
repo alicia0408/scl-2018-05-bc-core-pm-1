@@ -1,6 +1,7 @@
  body{
    /* caracteristicas de imagen de pantalla y body*/
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-image:url(https://image.freepik.com/vector-gratis/tecnologia-de-interfaz-fondo-abstracto_5205-97.jpg);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+background-image: url(https://data.whicdn.com/images/9416375/original.jpg);
 background-size: cover;
 background-repeat: no repeat;
 background-position: center;
@@ -11,10 +12,10 @@ background-position: center;
     text-align: center;
     color: white;
   }
-  
+
   /* caja donde esta el cipher*/
   .center{
-  width: 600px;
+  width: 500px;
   margin: 0 auto;
   background : #61e5f5;
   padding: 100px 100px 100px 100px;
@@ -29,10 +30,18 @@ background-position: center;
   border: none;
   padding-left: 20px;
 }
+
+#posicion{
+  height:20px;
+  font-size: 12px;
+  border-radius: 10px;
+  border:none;
+  padding-left: 10px;
+}
   /* boton de codifica*/
   #codifica{
-  background: goldenrod;
-  border: none;
+  background:#46a28d ;
+ border: none;
   border-radius: 5px;
   padding: 10px;
   color :black;
@@ -51,7 +60,7 @@ background-position: center;
 
 /*boton decodificar*/
 #decodifica{
-  background: goldenrod;
+  background: #46a28d;
   border: none;
   border-radius: 5px;
   padding: 10px;
