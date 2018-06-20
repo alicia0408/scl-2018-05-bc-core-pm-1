@@ -1,20 +1,35 @@
  body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-header{
-    background-image:url(https://images.unsplash.com/photo-1529314564927-f5fb4a459242?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8a4f85cb81cb7cbfbc9e928977859e&auto=format&fit=crop&w=500&q=60);
-padding: 4% 0; 
+   /* caracteristicas de imagen de pantalla y body*/
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-image:url(https://image.freepik.com/vector-gratis/tecnologia-de-interfaz-fondo-abstracto_5205-97.jpg);
 background-size: cover;
 background-repeat: no repeat;
 background-position: center;
   }
   
+  /* titulo*/
   h1{
     text-align: center;
     color: white;
   }
   
-  
+  /* caja donde esta el cipher*/
+  .center{
+  width: 600px;
+  margin: 0 auto;
+  background : #61e5f5;
+  padding: 100px 100px 100px 100px;
+  border-radius: 20px;
+   }
+
+/*caja de textarea donde se ingresa el texto a cifrar*/
+#oracion{
+  height: 100px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  padding-left: 20px;
+}
+  /* boton de codifica*/
   #codifica{
   background: goldenrod;
   border: none;
@@ -25,6 +40,8 @@ background-position: center;
   transition-duration: .5s;
   margin-top: 15px;
 }
+
+/*evento al colocar el mousse encima del boton codifica*/
 #codifica:hover{
   background: whitesmoke;
   border: 1px solid aqua;
@@ -32,6 +49,7 @@ background-position: center;
   cursor: pointer;
 }
 
+/*boton decodificar*/
 #decodifica{
   background: goldenrod;
   border: none;
@@ -42,9 +60,15 @@ background-position: center;
   transition-duration: .5s;
   margin-top: 15px;
 }
+
+/* evento al pasar el mousse por el boton*/
 #decodifica:hover{
   background: whitesmoke;
   border: 1px solid aqua;
   color: black;
   cursor: pointer;
 }
+  
+  
+
+
