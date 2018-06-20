@@ -1,5 +1,17 @@
-  body{
+ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+header{
+    background-image:url(https://images.unsplash.com/photo-1529314564927-f5fb4a459242?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c8a4f85cb81cb7cbfbc9e928977859e&auto=format&fit=crop&w=500&q=60);
+padding: 4% 0; 
+background-size: cover;
+background-repeat: no repeat;
+background-position: center;
+  }
+  
+  h1{
+    text-align: center;
+    color: white;
   }
   
   
