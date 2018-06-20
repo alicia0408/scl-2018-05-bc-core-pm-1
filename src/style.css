@@ -1,15 +1,20 @@
- #codifica{
+  body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  #codifica{
   background: goldenrod;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  color : white;
+  color :black;
   font-size: 16px;
   transition-duration: .5s;
   margin-top: 15px;
 }
 #codifica:hover{
-  background: white;
+  background: whitesmoke;
   border: 1px solid aqua;
   color: black;
   cursor: pointer;
@@ -20,13 +25,13 @@
   border: none;
   border-radius: 5px;
   padding: 10px;
-  color : white;
+  color :black;
   font-size: 16px;
   transition-duration: .5s;
   margin-top: 15px;
 }
 #decodifica:hover{
-  background: white;
+  background: whitesmoke;
   border: 1px solid aqua;
   color: black;
   cursor: pointer;
